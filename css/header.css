@@ -1,0 +1,55 @@
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+#logo_cargo{
+    display:flex;
+    flex-direction:row;
+    justify-content: center;
+    align-items: center;
+}
+#img_logo{
+    width: 8vw;
+    height: 8vw;
+    border-radius: 50vw;
+    box-shadow: 0.4vw 0.5vw 0.5vw #35353582;
+    margin-right: 2vw;
+}
+#titulo_cargo{
+    font-size: 1.5vw;
+    font-family: fontP;
+}
+#btns{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+}
+.btn_cabecalho{
+    width: 12vw;
+    height: 3vw;
+    font-size: 1.4vw;
+    color: #F5F4F4;
+    border-radius: 100px;
+    border: none;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 1vw;
+    margin: 0 1vw;
+}
+#btn_home{
+    background-color: #F14598;
+}
+#btn_projetos{
+    background-color: #26B2DA;
+}
+#btn_formacao{
+    background-color: #F2BA57;
+}
