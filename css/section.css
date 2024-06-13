@@ -1,0 +1,34 @@
+#img_principal{
+    width: 100vw;
+    height: auto;
+    position: absolute;
+    z-index: -1;
+    top: -5vw;
+    left: -10vw;
+}
+#nome{
+    font-family: 'fontS';
+    font-size: 10vw;
+    position: absolute;
+    right: 18vw;
+    top: 15vw;
+    color: #353535;
+}
+#sobrenome{
+    font-family: 'fontP';
+    font-size: 6vw;
+    position: absolute;
+    right: 18vw;
+    top: 26vw;
+    color: #353535;
+}
+#sobre_mim{
+    width: 33vw;
+    text-align: right;
+    font-family: 'fontP';
+    font-size:1.5vw ;
+    position: absolute;
+    right: 18vw;
+    top: 32vw;
+    color: #353535;
+}

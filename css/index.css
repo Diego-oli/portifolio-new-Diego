@@ -1,5 +1,5 @@
 @import url("header.css");
-@import url("infos.css");
+@import url("section.css");
 
 @font-face {
     font-family: 'fontP';
@@ -8,4 +8,8 @@
 @font-face {
     font-family: 'fontS';
     src: url(/assets/fonts/font_secundaria.ttf);
+}
+body{
+    background-color: white;
+    overflow-y:hidden;
 }
