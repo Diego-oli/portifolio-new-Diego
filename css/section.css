@@ -1,10 +1,10 @@
 #img_principal{
-    width: 100vw;
+    width: 110vw;
     height: auto;
     position: absolute;
     z-index: -1;
     top: -5vw;
-    left: -10vw;
+    left: -15vw;
 }
 #nome{
     font-family: 'fontS';
@@ -31,4 +31,26 @@
     right: 18vw;
     top: 32vw;
     color: #353535;
+}
+
+@media (max-width: 425px) {
+    #img_principal{
+        width: 260vw;
+        left: -75vw;
+        top: 18vw;
+    }
+    #nome{
+        font-size: 30vw;
+        top: 24vw;
+    }
+    #sobrenome{
+        font-size: 14vw;
+        top: 57vw;
+    }
+    #sobre_mim{
+        width: 90vw;
+        font-size: 5vw;
+        right: 7vw;
+        top: 127vw;
+    }
 }

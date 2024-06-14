@@ -1,5 +1,6 @@
 @import url("header.css");
 @import url("section.css");
+@import url(footer.css);
 
 @font-face {
     font-family: 'fontP';
@@ -12,4 +13,6 @@
 body{
     background-color: white;
     overflow-y:hidden;
+    overflow-x: hidden;
 }
+
