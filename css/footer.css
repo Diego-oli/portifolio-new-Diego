@@ -5,16 +5,23 @@ footer{
     display: flex;
     flex-direction: row;
     justify-content: right;
+    align-items: baseline;
     padding-right: 1vw;
 }
 footer button{
     border: 0;
     background-color: transparent;
-    margin: 0.5vw 0.3vw;
+    margin: 0.5vw 0.3vw;    
 }
 footer i{
     font-size: 3vw;
     color: #353535;    
+
+    transition: all 0.5s ease-out;
+}
+
+.btn_footer i:hover{
+    font-size: 4vw;
 }
 
 @media (max-width: 425px) {
