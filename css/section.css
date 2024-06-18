@@ -12,6 +12,7 @@
 section{
     font-family: 'fontS';
     color: #353535;
+    overflow: hidden;
 }
 
 #nome {
@@ -43,7 +44,6 @@ section{
         width: 260%;
         left: -75%;
         top: 10%;
-        overflow: hidden;
     }
     #nome {
         font-size: 28vw;
@@ -60,6 +60,6 @@ section{
         width: 90%;
         font-size: 5vw;
         right: 5%;
-        top: 80%;
+        top: 75%;
     }
 }
