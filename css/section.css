@@ -5,6 +5,7 @@
     z-index: -1;
     top: -18%;
     left: -15%;
+    background-attachment: fixed;
 }
 
 /* Configuração dos textos */
@@ -42,6 +43,7 @@ section{
         width: 260%;
         left: -75%;
         top: 10%;
+        overflow: hidden;
     }
     #nome {
         font-size: 28vw;
