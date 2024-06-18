@@ -41,11 +41,11 @@ section{
     #img_principal {
         width: 260%;
         left: -75%;
-        top: 15%;
+        top: 10%;
     }
     #nome {
         font-size: 28vw;
-        top: 0;
+        top: -5%;
         left: 5%;
     }
     #sobrenome {
