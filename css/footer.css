@@ -25,6 +25,7 @@ footer i{
 @media (max-width: 425px) {
     footer{
         justify-content: center;
+        bottom: 0;
     }
     footer i{
         font-size: 10vw;

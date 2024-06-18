@@ -58,7 +58,7 @@ section{
     }
     #sobrenome {
         font-size: 14vw;
-        top: -20%;
+        top: -25%;
         left: 5%;
     }
 
@@ -66,6 +66,6 @@ section{
         width: 90%;
         font-size: 5vw;
         right: 5%;
-        top: 20%;
+        top: 15%;
     }
 }
