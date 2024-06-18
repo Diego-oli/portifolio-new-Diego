@@ -44,20 +44,21 @@ section{
 @media (max-width: 425px) {
     body{
         overflow: hidden;
+        margin-top: 5%;
     }
     #img_principal {
         width: 260%;
         left: -75%;
-        top: -15%;
+        top: -40%;
     }
     #nome {
         font-size: 28vw;
-        top: -20%;
+        top: -40%;
         left: 5%;
     }
     #sobrenome {
         font-size: 14vw;
-        top: 5%;
+        top: -20%;
         left: 5%;
     }
 
@@ -65,6 +66,6 @@ section{
         width: 90%;
         font-size: 5vw;
         right: 5%;
-        top: 50%;
+        top: 20%;
     }
 }
