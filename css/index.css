@@ -1,6 +1,6 @@
 @import url("header.css");
 @import url("section.css");
-@import url(footer.css);
+@import url("footer.css");
 
 @font-face {
     font-family: 'fontP';
@@ -10,17 +10,11 @@
     font-family: 'fontS';
     src: url(/assets/fonts/font_secundaria.ttf);
 }
+
 body{
     background-color: white;
-    overflow-y:hidden;
-    overflow-x:hidden;
-}
-
-
-ul li ul{
-    display: none;
-}
-
-ul li:hover ul{
-    display: block;
+    overflow:hidden;
+    margin: 0;
+    width: 100vw;
+    height: 100vh;
 }
