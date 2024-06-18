@@ -48,8 +48,8 @@ section{
         height: 65%;
     }
     #img_principal{
-        width: 110%;
-        left: -5%;
+        width: 100%;
+        left: 0;
         top: 25%;
     }
     #nome{
