@@ -1,71 +1,71 @@
-/* Configuração da imagem principal */
-#img_principal {
-    width: 110%;
-    position: absolute;
-    z-index: -1;
-    top: -30%;
-    left: -15%;
-    overflow: hidden;
-}
-
-/* Configuração dos textos */
+/* Configuração da seção */
 section{
+    width: 100%;
+    height: 70%;
+    display: flex;
+    justify-content: center;
+
     font-family: 'fontS';
     color: #353535;
-    overflow: hidden;
-    position: relative;
-    height: 100%;
 }
-
+/* Configuração da imagem principal */
+#img_principal {
+    position: absolute;
+    width: 40%;
+    z-index: -1;
+    left: 18%;
+    top: 10%;
+}
+/* Configuração dos textos */
 #nome {
+    margin: 0;
     position: absolute;
     font-size: 10vw;
-    right: 18%;
-    top: -10%;
+    right: 20%;
+    top: 20%;
 }
-
 #sobrenome {
+    margin: 0;
     position: absolute;
-    font-size: 6vw;    
-    right: 18%;
-    top: 16%;
+    font-size: 6vw;   
+    right: 20%;
+    top: 39%; 
 }
-
 #sobre_mim {
-    width: 25%;
+    margin: 0;
     text-align: right;
     font-family: 'fontP';
     font-size: 1.5vw;
+
+    width: 28%;
     position: absolute;
-    right: 18%;
-    top: 38%;
+    right: 20%;
+    top: 50%;
 }
 
 @media (max-width: 425px) {
-    body{
-        overflow: hidden;
-        margin-top: 5%;
+    section{
+        height: 65%;
     }
-    #img_principal {
-        width: 260%;
-        left: -75%;
-        top: -40%;
+    #img_principal{
+        width: 110%;
+        left: -5%;
+        top: 25%;
     }
-    #nome {
-        font-size: 28vw;
-        top: -40%;
+    #nome{
+        font-size: 25vw;
         left: 5%;
+        top: 15%;
     }
-    #sobrenome {
-        font-size: 14vw;
-        top: -25%;
+    #sobrenome{
+        font-size: 12vw;
         left: 5%;
+        top: 28%;
     }
-
-    #sobre_mim {
-        width: 90%;
+    #sobre_mim{
+        width: 80%;
         font-size: 5vw;
         right: 5%;
-        top: 15%;
+        top: 80%;
     }
 }

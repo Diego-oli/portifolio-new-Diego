@@ -1,6 +1,6 @@
 /*Configuração das divisoes do cabeçalho*/
 header {
-    height: 13%;
+    height: 15%;
     display: flex;
     justify-content: space-between;
 }
@@ -21,7 +21,7 @@ header div {
 }
 
 /*Configuração do profissão*/
-#proficao {
+#profissao {
     font-family: 'fontP';
     font-size: 1.6vw;
 }
@@ -33,13 +33,15 @@ header div {
 .btn {
     width: 26%;
     height: 40%;
-    border: none;
     border-radius: 100vw;
+       
     margin: 0 1.5%;
     display: flex;
     justify-content: space-between;
     align-items: center;
+
     box-shadow: 0.1vw 0.2vw 0.3vw rgba(35, 35, 35, 0.5);
+    border: none; 
 }
 .btn h4,
 .btn i {
@@ -51,9 +53,6 @@ header div {
 }
 .btn h4 {
     font-family: 'fontP';
-}
-.btn:hover i{
-    font-size: 1.3vw;
 }
 .btn:hover h4{
     font-size: 1.3vw;
@@ -72,38 +71,38 @@ header div {
 
 @media (max-width: 425px) {
     header{
-        height: 25%;
+        height: 28%;
         align-items: flex-start;
-        z-index: -1;
     }
     #logo_profissao{
-        width: 70%;
+        width: 80%;
         height: auto;
     }
-    #btns_header{
+    #img_logo{
         width: 20%;
+        margin: 0 4%;
+    }
+    #profissao{
+        font-size: 5vw;
+    }
+
+    #btns_header{
+        width: 15%;
         flex-direction: column;
         justify-content: space-around;
-        margin: 0;
     }
     .btn{
-        width: 70%;
-        height: 30%;
+        width: 90%;
+        height: 25%;
         justify-content: center;
+    }
+    .btn h4{
+        display: none;
     }
     .btn i{
         font-size: 5vw;
     }
     .btn:hover i{
-        font-size: 6vw;
-    }
-    .btn h4{
-        display: none;
-    }
-    #img_logo{
-        width: 30%;
-    }
-    #proficao{
         font-size: 6vw;
     }
 }

@@ -1,16 +1,15 @@
 footer{
     width: 100%;
-    position: absolute;
-    bottom: 0;
+    height: 15%;
     display: flex;
     justify-content: right;
-    align-items: baseline;
+    align-items: end;
     padding-right: 5%;
 }
-footer button{
+.btn_footer{
+    margin: 0;
     border: 0;
-    background-color: transparent;
-    margin: 0.3%;    
+    background-color: transparent;    
 }
 footer i{
     font-size: 3vw;
@@ -22,15 +21,19 @@ footer i{
     font-size: 4vw;
 }
 
-@media (max-width: 425px) {
+@media (max-width: 425px){
     footer{
+        height: 7%;
         justify-content: center;
-        bottom: 0;
+        padding: 0;
+    }
+    .btn_footer{
+        margin: 0 3%;
     }
     footer i{
         font-size: 10vw;
     }
     .btn_footer i:hover{
-        font-size: 11vw;
+        font-size: 12vw;
     }
 }
