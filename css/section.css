@@ -5,7 +5,7 @@
     z-index: -1;
     top: -30%;
     left: -15%;
-    object-fit: cover;
+    overflow: hidden;
 }
 
 /* Configuração dos textos */
@@ -42,6 +42,9 @@ section{
 }
 
 @media (max-width: 425px) {
+    body{
+        overflow: hidden;
+    }
     #img_principal {
         width: 260%;
         left: -75%;
@@ -49,7 +52,7 @@ section{
     }
     #nome {
         font-size: 28vw;
-        top: -5%;
+        top: 0;
         left: 5%;
     }
     #sobrenome {
