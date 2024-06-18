@@ -3,9 +3,9 @@
     width: 110%;
     position: absolute;
     z-index: -1;
-    top: -18%;
+    top: -30%;
     left: -15%;
-    background-attachment: fixed;
+    object-fit: cover;
 }
 
 /* Configuração dos textos */
@@ -13,20 +13,22 @@ section{
     font-family: 'fontS';
     color: #353535;
     overflow: hidden;
+    position: relative;
+    height: 100%;
 }
 
 #nome {
     position: absolute;
     font-size: 10vw;
     right: 18%;
-    top: 10%;
+    top: -10%;
 }
 
 #sobrenome {
     position: absolute;
     font-size: 6vw;    
     right: 18%;
-    top: 36%;
+    top: 16%;
 }
 
 #sobre_mim {
@@ -36,7 +38,7 @@ section{
     font-size: 1.5vw;
     position: absolute;
     right: 18%;
-    top: 58%;
+    top: 38%;
 }
 
 @media (max-width: 425px) {
@@ -60,6 +62,6 @@ section{
         width: 90%;
         font-size: 5vw;
         right: 5%;
-        top: 75%;
+        top: 70%;
     }
 }
