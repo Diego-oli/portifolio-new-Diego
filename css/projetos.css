@@ -1,14 +1,6 @@
 @import url("header.css");
+@import url("fonts.css");
 @import url("banner.css");
-
-@font-face {
-    font-family: 'fontP';
-    src: url(/assets/fonts/font_principal.ttf);
-}
-@font-face {
-    font-family: 'fontS';
-    src: url(/assets/fonts/font_secundaria.ttf);
-}
 
 body{
     background-color: white;
