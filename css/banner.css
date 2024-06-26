@@ -1,0 +1,53 @@
+#banner{
+    position: absolute;
+    left: -200vw;
+    width: 500vw;
+    height: 20vw;
+    display: flex;
+    flex-direction: row;
+    transition: all 0.2s ease;
+}
+#banner div{
+    width: 95vw;
+    height: 20vw;
+    margin: 0 2.5vw;
+}
+#banner1{
+    background-color: red;
+}
+#banner2{
+    background-color: yellow;
+}
+#banner3{
+    background-color: green;
+}
+#banner4{
+    background-color: purple;
+}
+#banner5{
+    background-color: blue;
+}
+
+#btn_nav{
+    width: 100vw;
+    height: 2.5vw;
+    position: absolute;
+    top: 25vw;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    z-index: 1;
+}
+#btn_nav button{
+    width: 1.5vw;
+    height: 1.5vw;
+    border: none;
+    margin: 0 1vw;
+    border-radius: 100vw;
+    background-color: white;
+    
+    transition: all 0.1s ease-in;
+}

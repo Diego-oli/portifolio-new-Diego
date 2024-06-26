@@ -1,0 +1,25 @@
+@import url("header.css");
+@import url("banner.css");
+
+@font-face {
+    font-family: 'fontP';
+    src: url(/assets/fonts/font_principal.ttf);
+}
+@font-face {
+    font-family: 'fontS';
+    src: url(/assets/fonts/font_secundaria.ttf);
+}
+
+body{
+    background-color: white;
+    margin: 0;
+    width: 100vw;
+    height: 100vh;
+    overflow-x: hidden;
+}
+
+@media (max-width: 425px) {
+    body{
+        overflow: auto;
+    }
+}
