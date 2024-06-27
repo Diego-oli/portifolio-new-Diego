@@ -1,3 +1,36 @@
+let divs = [];
+let titulos = ['MAÇÃ', 'BANANA', 'PERA', 'ABACAXI', 'MELANCIA', 'CEREJA'];
+let textos = ['aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa', 'bbbbbbbbbbbbbbbbbbbbbbbbbbbbb', 'ccccccccccccccccccccccccccccccc', 'ddddddddddddddddddddddddddddddddd', 'eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee', 'fffffffffffffffffffffffffff'];
+let imgs = ['logo.png', 'logo.png', 'img.png', 'logo.png', 'img.png', 'img.png'];
+
+
+var cards_projetos = document.getElementById('cards_projetos');
+
+for(var i = 0; i <titulos.length ; i++){
+    var div = document.createElement('div');
+
+    div.className = 'card';
+    divs.push(div);
+    cards_projetos.appendChild(div);
+}
+
+for(var i = 0; i <titulos.length ; i++){
+    var img = document.createElement('img');
+    var h3 = document.createElement('h3');
+    var p = document.createElement('p');
+
+    img.src = '../assets/img/'+ imgs[i];
+    img.style.width = '5vw';
+
+    h3.textContent = titulos[i];
+
+    p.textContent = textos[i];
+
+    divs[i].appendChild(img);
+    divs[i].appendChild(h3);
+    divs[i].appendChild(p);
+}
+
 let bannerAtual = 1;
 const totalBanners = 5;
 let intervaloTroca;
