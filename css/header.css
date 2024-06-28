@@ -30,6 +30,9 @@ header div {
 #btns_header{
     justify-content: end;
 }
+#menu{
+    display: none;
+}
 .btn {
     width: 26%;
     height: 40%;
@@ -74,6 +77,26 @@ header div {
         height: 28%;
         align-items: flex-start;
     }
+    #menu{
+        width: 90%;
+        height: 25%;
+        display: flex;
+        background-color: transparent;
+        border: 0;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    #menu div{
+        position: relative;
+        width: 70%;
+        height: 10%;
+        background-color: #353533;
+        border-radius: 50px;
+        margin: 5%;
+
+        transition: all 0.2s ease-in-out;
+    }
     #logo_profissao{
         width: 80%;
         height: auto;
@@ -92,9 +115,14 @@ header div {
         justify-content: space-around;
     }
     .btn{
-        width: 90%;
+        width: 85%;
         height: 25%;
         justify-content: center;
+        position: relative;
+        right: -20vw;
+        margin: 5%;
+
+        transition: all 0.2s ease-in-out;
     }
     .btn h4{
         display: none;
