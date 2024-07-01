@@ -6,7 +6,7 @@ header {
 }
 header div {
     height: 100%;
-    width: 50%;
+    width: 40%;
     display: flex;
     align-items: center;
     margin: 0 1%;
@@ -29,12 +29,13 @@ header div {
 /*Configuração dos botões*/
 #btns_header{
     justify-content: end;
+    margin-right: 4.4%;
 }
 #menu{
     display: none;
 }
 .btn {
-    width: 26%;
+    width: 30%;
     height: 40%;
     border-radius: 100vw;
        

@@ -1,43 +1,40 @@
 #banner_btns{
-    height: 25vw;
+    height: 22vw;
 }
 #banner{
     position: absolute;
     left: -000vw;
     width: 500vw;
     height: 22vw;
-    margin: 1.5vw 0;
     display: flex;
     flex-direction: row;
+    margin: 0.5vw 0; 
 
-    transition: all 0.3s ease-in-out;
+    transition: left 0.3s ease-in-out;
 }
 
 #banner div{
     width: 90vw;
     height: 22vw;
     margin: 0 5vw;
-}
-
-#banner1{
-    background-color: blue;
-}
-#banner2{
-    background-color: black;
-}
-#banner3{
     background-color: green;
 }
-#banner4{
-    background-color: purple;
+#banner div h3, #banner div h6{
+    margin: 0 2vw;
+    color: #F5F4F4;
 }
-#banner5{
-    background-color: brown;
+#banner div h3{
+    font-size:4.5vw;
+    font-family: 'fontS';
+}
+#banner div h6{
+    font-size: 1.5vw;
+    font-family: 'fontP';
 }
 
 #btns{
     position: absolute;
-    top: 29vw;
+    top: 27vw;
     width: 100vw;
     height: 2vw;
     display: flex;
@@ -46,11 +43,7 @@
     align-items: center;
 }
 
-#btn1{
-    width: 1.7vw;
-    height: 1.7vw; 
-}
-#btn2, #btn3, #btn4, #btn5{
+#btns div{
     width: 1.2vw;
     height: 1.2vw;
 }

@@ -1,12 +1,46 @@
 #cards_projetos{
-    width: 100vw;
+    width: 90vw;
+    margin: 0 5vw;
     display: grid;
     justify-content: space-around;
-    grid-template-columns: 19vw 19vw 19vw 19vw 19vw;
-    grid-template-rows: 11vw 11vw;
+    grid-template-columns: 15vw 15vw 15vw 15vw 15vw;
+    grid-template-rows: 20vw 20vw 20vw;
 }
 .card{
-    width: 19vw;
-    height: 10vw;
-    background-color: red;
+    width: 15vw;
+    height: 18vw;
+    background-color: white;
+    box-shadow: 0.1vw 0.2vw 0.3vw rgba(35, 35, 35, 0.5);
+    border-radius: 1.5vw;
+    overflow: hidden;
+
+    transition: all 0.2s ease-in-out;
 }
+
+.card div{
+    height: 18vw;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+
+    transition: all 0.2s ease-in-out;
+}
+.card img{
+    margin-top: 1vw;
+    height: 7vw;
+    width: 7vw;
+    transition: all 0.2s ease-in-out;
+}
+.card h3{
+    font-family: 'fontS';
+    font-size: 2vw;
+}
+.card p{
+    text-align: center;
+    font-family: 'fontP';
+    font-size: 0.8vw;
+    margin: 0 1vw 1vw;
+}
+
