@@ -1,6 +1,6 @@
 /*Configuração das divisoes do cabeçalho*/
 header {
-    height: 15%;
+    height: 7vw;
     display: flex;
     justify-content: space-between;
 }

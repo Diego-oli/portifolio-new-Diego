@@ -36,6 +36,7 @@
 #btns_habilidades div nav h4{
     font-size: 1.4vw;
     line-height: 4vw;
+    margin: 0;
 }
 #areas{
     background-color: #26B2DA;

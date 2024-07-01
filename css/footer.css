@@ -1,10 +1,9 @@
 footer{
-    width: 100%;
-    height: 15%;
+    width: 95vw;
+    height: 6vw;
     display: flex;
     justify-content: right;
     align-items: end;
-    padding-right: 5%;
 }
 .btn_footer{
     margin: 0 0.3vw;
