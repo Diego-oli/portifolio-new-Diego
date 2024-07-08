@@ -5,6 +5,7 @@ export class CriadorCards{
         this.projetos = new Projetos();
         this.cards_projetos = document.getElementById('cards_projetos');
         this.divs = [];
+        this.criar_card = document.getElementById('criar_card');
     }
 
     criarCards() {
@@ -50,8 +51,7 @@ export class CriadorCards{
         let divAdd = document.createElement('div');
         divAdd.className = 'card cardAdd';
         divAdd.addEventListener('click', ()=> {
-            this.projetos.addCard();
-            this.criarCards();
+            this.criar_card.style.display = 'flex';
         });
     
         let icon = document.createElement('i');
@@ -59,5 +59,11 @@ export class CriadorCards{
     
         divAdd.appendChild(icon);
         this.cards_projetos.appendChild(divAdd);
+    }
+    addCard(){
+        return ()=>{
+            this.projetos.addCard();
+            this.criarCards();
+        }
     }
 }

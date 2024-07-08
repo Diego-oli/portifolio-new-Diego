@@ -7,11 +7,13 @@ import { CriadorCards } from "../../view/js/projetos/cards_view.js";
 
 window.trocaBanner = trocaBanner;
 
+
 document.addEventListener("DOMContentLoaded", function() {
     criarBanners();
     criarHabilits();
     let criadorCards = new CriadorCards();
     criadorCards.criarCards();
+    window.addCard = criadorCards.addCard();
     trocaBanner(1); // Inicializa o banner
     startAutoSwap(); // Inicia a troca automática
     startAutoSwapHabilits();
