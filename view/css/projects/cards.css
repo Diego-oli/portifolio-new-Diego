@@ -4,7 +4,6 @@
     display: grid;
     justify-content: space-around;
     grid-template-columns: 15vw 15vw 15vw 15vw 15vw;
-    grid-template-rows: 20vw 20vw 20vw 20vw 20vw;
 }
 .card{
     width: 15vw;
@@ -13,6 +12,7 @@
     box-shadow: 0.1vw 0.2vw 0.3vw rgba(35, 35, 35, 0.5);
     border-radius: 1.5vw;
     overflow: hidden;
+    margin: 1vw 0;
 
     transition: all 0.2s ease-in-out;
     transform-origin: center;

@@ -1,4 +1,3 @@
-
 const totalBanners = 5;
 let bannerAtual = 1;
 let intervaloTrocaBanner;

@@ -1,9 +1,11 @@
-@import url("header.css");
-@import url("fonts.css");
-@import url("banner.css");
-@import url("lista_cards.css");
-@import url("habilits.css");
-@import url("footer.css");
+@import url("../header.css");
+@import url("../fonts.css");
+@import url("../footer.css");
+
+@import url("./banner.css");
+@import url("./cards.css");
+@import url("./habilits.css");
+
 
 body{
     background-color: white;
