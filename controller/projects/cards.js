@@ -6,6 +6,9 @@ export class CriadorCards {
         this.input_titulo = document.getElementById('input_titulo');
         this.input_descricao = document.getElementById('input_descricao');
         this.input_img = document.getElementById('input_img');
+
+        this.addCard = this.addCard.bind(this);
+        this.removerCard = this.removerCard.bind(this);
     }
 
     async criarCards() {
