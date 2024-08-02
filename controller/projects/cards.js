@@ -20,40 +20,40 @@ export class CriadorCards {
         this.divs = [];
     
         for (let i = 0; i < projetos.length; i++) {
-            var div = document.createElement('div');
-    
+            let div = document.createElement('div');    
             div.className = 'card';
             this.divs.push(div);
             this.cards_projetos.appendChild(div);
         }
     
         for (let i = 0; i < projetos.length; i++) {
-            var div = document.createElement('div');
-            var img = document.createElement('img');
-            var h3 = document.createElement('h3');
-            var p = document.createElement('p');
-            var btn = document.createElement('button');
-    
+            let div = document.createElement('div');
+            let img = document.createElement('img');
+            let h3 = document.createElement('h3');
+            let p = document.createElement('p');
+            let btn = document.createElement('button');
+        
             btn.style.width = '5vw';
             btn.style.height = '2vw';
             btn.textContent = 'Remover';
             btn.addEventListener('click', () => {
-                this.removerCard(projetos[i].titulo);
+                this.removerCard(projetos[i].id);
             });
-    
+        
             img.src = projetos[i].img;
             img.style.width = '5vw';
-    
+        
             h3.textContent = projetos[i].titulo;
-    
+        
             p.textContent = projetos[i].descricao;
-    
+        
             div.appendChild(img);
             div.appendChild(h3);
             div.appendChild(p);
             div.appendChild(btn);
             this.divs[i].appendChild(div);
         }
+        
     
         let divAdd = document.createElement('div');
         divAdd.className = 'card cardAdd';
@@ -91,16 +91,16 @@ export class CriadorCards {
         }
     }
 
-    async removerCard(nome) {
+    async removerCard(id) {
         const response = await fetch('http://127.0.0.1:3000/deleteCard', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
             },
-            body: JSON.stringify({ card: nome })
+            body: JSON.stringify({ cardId: id })
         });
         const result = await response.json();
-
+    
         if (response.status === 200) {
             console.log(result.message);
             this.criarCards();
@@ -108,4 +108,5 @@ export class CriadorCards {
             console.error(result.error);
         }
     }
+    
 }
