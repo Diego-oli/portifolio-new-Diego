@@ -11,7 +11,7 @@ body{
 
 .cartao{
     width: 15vw;
-    height: 25vh;
+    height: 40vh;
     margin: 1vw;
 
     display: flex;
@@ -26,6 +26,11 @@ body{
 
     font-family: 'Courier New', Courier, monospace;
     color: rgb(33, 33, 33);
+}
+
+.cartao img{
+    width: 80%;
+    height: auto;
 }
 
 .cartao h3{
