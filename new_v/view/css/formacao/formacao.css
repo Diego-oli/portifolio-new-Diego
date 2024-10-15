@@ -1,3 +1,6 @@
+@import url(./telaCadastro.css);
+@import url(./telaAtt.css);
+
 body{
     display: flex;
     justify-content: center;
@@ -35,4 +38,19 @@ body{
 
 .cartao h3{
     font-size: 3vw;
+}
+
+.button_card{
+    border: none;
+    background-color: rgb(163, 224, 246);
+    border-radius: 2vw;
+    color: white;
+    padding: 1vw;
+    cursor: pointer;
+
+    box-shadow: 0.1vw 0.1vw 0.1vw rgba(33, 33, 33, 0.3);
+}
+
+.button_card:hover{
+    background-color: rgb(78, 193, 234);
 }
