@@ -62,6 +62,7 @@ export async function atualizarCartao(id, nome, valor, img) {
                 id: id,
             }),
         });
+        criarCartoes();
     } catch (e) {
         console.log(e);
     }
