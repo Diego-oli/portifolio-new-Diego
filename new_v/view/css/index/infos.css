@@ -1,72 +1,381 @@
-/* Configuração da seção */
-section{
+@import url(./header.css);
+@import url(./index.css);
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&family=Sofadi+One&display=swap');
+
+body,
+html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+}
+
+.tela {
     width: 100%;
-    height: 70%;
+    height: 100vh;
     display: flex;
     justify-content: center;
-
-    font-family: 'fontS';
-    color: #353535;
-}
-/* Configuração da imagem principal */
-#img_principal {
-    position: absolute;
-    width: 40%;
-    z-index: -1;
-    left: 18%;
-    top: 10%;
-}
-/* Configuração dos textos */
-#nome {
-    margin: 0;
-    position: absolute;
-    font-size: 10vw;
-    right: 20%;
-    top: 20%;
-}
-#sobrenome {
-    margin: 0;
-    position: absolute;
-    font-size: 5vw;  
-    font-family: 'fontP'; 
-    right: 20%;
-    top: 42%; 
-}
-#sobre_mim {
-    margin: 0;
-    text-align: right;
-    font-family: 'fontP';
-    font-size: 1.5vw;
-
-    width: 28%;
-    position: absolute;
-    right: 20%;
-    top: 52%;
+    align-items: center;
+    background-color: #fff;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
 }
 
-@media (max-width: 425px) {
-    section{
-        height: 65%;
+.conteudo {
+    width: 100%;
+    height: 100%;
+    background-color: #ffffff;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.cabecalho {
+    background: linear-gradient(45deg, #ff6b6b, #4ecdc4, #45b7d1);
+    height: 100px;
+    display: flex;
+    align-items: center;
+    padding:  0 15px;
+    border-radius: 0%;
+}
+
+.botao-redondo {
+    width: 40px;
+    height: 40px;
+    background-color: white;
+    border-radius: 50%;
+    margin-right: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.logo,
+.item-menu,
+.logo-centralizada {
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+    animation: piscar 1s infinite;
+}
+
+.logo {
+    font-family: "Sofadi One", system-ui;
+}
+
+@keyframes piscar {
+    0%,
+    100% {
+        color: rgb(255, 5, 142);
     }
-    #img_principal{
-        width: 100%;
-        left: 0;
-        top: 25%;
+
+    33% {
+        color: rgb(140, 0, 255);
     }
-    #nome{
-        font-size: 25vw;
-        left: 5%;
-        top: 15%;
-    }
-    #sobrenome{
-        font-size: 12vw;
-        left: 5%;
-        top: 30%;
-    }
-    #sobre_mim{
-        width: 80%;
-        font-size: 5vw;
-        right: 5%;
-        top: 80%;
+
+    66% {
+        color: rgb(255, 0, 221);
     }
 }
+
+.menu {
+    position: absolute;
+    right: 20px;
+    top: 40px;
+}
+
+.item-menu {
+    display: inline-block;
+    margin-left: 25px;
+    padding: 0px 25px;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 20px;
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.conteudo-principal {
+    flex: 1;
+    padding: 40px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.logo-colorida {
+    width: 200px;
+    height: 200px;
+    margin: 0 auto 30px;
+}
+
+h1 {
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.logo-centralizada {
+    font-size: 48px;
+    font-weight: bold;
+    animation: piscar 1s infinite;
+    font-family: 'Press Start 2P', cursive;
+    display: block;
+    margin-bottom: 10px; /* Reduz o espaço abaixo da logo */
+}
+
+@keyframes piscarRGB {
+    0% {
+        fill: rgb(255, 5, 142);
+    }
+
+    33% {
+        fill: rgb(140, 0, 255);
+    }
+
+    100% {
+        fill: rgb(255, 0, 221);
+    }
+}
+
+.container-bolsonaro {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 10px; /* Move o container para cima */
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+}
+
+.bolsonaro {
+    width: 120px;
+    height: auto;
+    border-radius: 0%;
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+    align-items: center;
+}
+
+.bolsonaro:hover {
+    transform: scale(1.1);
+}
+
+.texto-bolsonaro {
+    font-size: 16px;
+    text-align: left;
+    color: #333;
+    max-width: 400px;
+    margin-top: 5px; /* Ajusta o espaço entre a imagem e o texto */
+}
+
+.botao-fixo {
+    position: absolute;
+    bottom: 15px;
+    right: 20px;
+    width: 70px;
+    height: 70px;
+    border: none;
+    background: none;
+    cursor: pointer;
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+    animation: brilhar 1.5s infinite;
+    transition: transform 0.5s ease;
+    
+}
+.botao-fixo {
+    position: absolute; /* Altera de fixed para absolute para movimentação */
+}
+
+.botao-fixo img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+
+.botao-fixo img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+@keyframes brilhar {
+    0% {
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    }
+
+    50% {
+        box-shadow: 0 0 25px rgba(255, 0, 0, 0.6);
+    }
+
+    100% {
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    }
+}
+@keyframes girar {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/* Aplicando a animação de rotação ao botão redondo */
+.botao-redondo {
+    animation: girar 2s linear infinite; /* Faz o botão girar continuamente */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.botao-redondo:hover {
+    transform: scale(1.1) rotate(360deg); /* Escala e gira ao passar o mouse */
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
+}
+
+@media (max-width: 768px) {
+    .cabecalho {
+        padding: 0 10px;
+    }
+
+    .item-menu {
+        font-size: 12px;
+        padding: 5px 10px;
+        margin-left: 8px;
+    }
+
+    .logo-centralizada {
+        font-size: 24px;
+        margin-bottom: 5px;
+    }
+
+    h1 {
+        font-size: 20px;
+    }
+
+    .container-bolsonaro {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 5px;
+    }
+
+    .texto-bolsonaro {
+        font-size: 10px;
+        text-align: center;
+        margin-top: 3px;
+    }
+
+    .logo-colorida {
+        width: 150px;
+        height: 150px;
+    }
+}
+
+@media (max-width: 480px) {
+    .cabecalho {
+        height: 60px;
+    }
+
+    .botao-redondo {
+        width: 30px;
+        height: 30px;
+    }
+
+    .logo-centralizada {
+        font-size: 20px;
+        margin-bottom: 0;
+    }
+
+    h1 {
+        font-size: 18px;
+    }
+
+    .item-menu {
+        font-size: 10px;
+        margin-left: 5px;
+    }
+
+    .logo-colorida {
+        width: 120px;
+        height: 120px;
+    }
+
+    .container-bolsonaro {
+        gap: 5px;
+        margin-top: 0;
+    }
+
+    .bolsonaro {
+        width: 120px;
+        margin-top: -20px;
+    }
+
+    .texto-bolsonaro {
+        font-size: 10px;
+        text-align: center;
+        margin-top: 0;
+    }
+
+    .botao-fixo {
+        width: 60px;
+        height: 60px;
+    }
+}
+
+/* Animação de brilho */
+@keyframes brilhar {
+    0% {
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    }
+    50% {
+        box-shadow: 0 0 25px rgba(255, 0, 0, 0.6);
+    }
+    100% {
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    }
+}
+
+/* Aplicando animação de brilho ao botão fixo */
+.botao-fixo {
+    position: fixed;
+    bottom: 15px;
+    right: 20px;
+    width: 70px;
+    height: 70px;
+    border: none;
+    background: none;
+    cursor: pointer;
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+    animation: brilhar 1.5s infinite;
+}
+
+.botao-fixo img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+/* Aplicando a animação de brilho a todos os botões com a classe .botao-animado */
+.botao-redondo,
+.bolsonaro,
+.item-menu {
+    /* Adicionando a classe animada para todos os botões */
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.botao-redondo:hover,
+.bolsonaro:hover,
+.item-menu:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
+}
+

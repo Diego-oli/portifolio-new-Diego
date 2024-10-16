@@ -2,15 +2,135 @@
 @import url(./../footer.css);
 @import url(./../header.css);
 @import url(./infos.css);
+@import url(./header.css);
+@import url(./infos.css);
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&family=Sofadi+One&display=swap');
 
 body{
-    background-color: white;
-    overflow-x:hidden;
     margin: 0;
-    width: 100vw;
-    height: 100vh;
+    padding: 0;
+    overflow-x: hidden;
+}
+    /* Definindo estilos globais para as fontes */
+    body {
+        font-family: 'Poppins', sans-serif; /* Fonte moderna padrão */
+    }
+
+    h1, h2, h3, h4, h5, h6, .logo {
+        font-family: 'Press Start 2P', cursive; /* Mantém a fonte gamer em títulos e logo */
+    }
+
+    /* Estilo para o vídeo no canto */
+    #video-container {
+        position: fixed;
+        bottom: 120px;
+        right: 20px;
+        width: 300px;
+        height: 170px;
+        z-index: 100;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    }
+
+    iframe {
+        width: 100%;
+        height: 100%;
+    }
+
+    /* Estilo para a webcam */
+    #webcam-container {
+        position: fixed;
+        bottom: 120px;
+        left: 20px;
+        width: 300px;
+        height: 170px;
+        z-index: 100;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    }
+
+    #webcam {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+p{
+    font-family: "Sofadi One", system-ui;
+}
+ /* Definindo estilos globais para as fontes */
+ body {
+    font-family: 'Poppins', sans-serif; /* Fonte moderna padrão */
 }
 
-button{
+h1, h2, h3, h4, h5, h6, .logo {
+    font-family: 'Press Start 2P', cursive; /* Mantém a fonte gamer em títulos e logo */
+}
+
+/* Estilo para o vídeo no canto */
+#video-container {
+    position: fixed;
+    bottom: 120px;
+    right: 20px;
+    width: 300px;
+    height: 170px;
+    z-index: 100;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+
+iframe {
+    width: 100%;
+    height: 100%;
+}
+
+/* Estilo para a webcam */
+#webcam-container {
+    position: fixed;
+    bottom: 120px;
+    left: 20px;
+    width: 300px;
+    height: 170px;
+    z-index: 100;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+
+#webcam {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.bolsonaro {
+    width: 190px;
+    height: auto;
+    border-radius: 0%;
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
     cursor: pointer;
+}
+
+.bolsonaro:hover {
+    transform: scale(1.1);
+}
+
+footer{
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    margin-top: 20px;
+}
+
+footer nav {
+    margin: 10px 0;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 18px;
+}
+
+footer a:hover {
+    text-decoration: underline;
 }

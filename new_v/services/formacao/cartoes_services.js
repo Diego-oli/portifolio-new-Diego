@@ -2,26 +2,26 @@ import { criarCartoes } from "../../view/js/formacao/cartoes_view.js";
 
 export async function buscarCarotes() {
     try {
-        const response = await fetch('http://localhost:3000/cartoes');
+        const response = await fetch('http://localhost:3000/cards');
         const data = await response.json();
-        const cartoes = data.cartoes;
-        return cartoes;
+        const cards = data.cards;
+        return cards;
     }
     catch (e) {
         console.log(e);
     }
 }
 
-export async function excluirCartoes(index) {
+export async function excluircards(index) {
     try {
-        const response = await fetch('http://localhost:3000/cartoes', {
+        const response = await fetch('http://localhost:3000/cards', {
             method: 'DELETE',
             headers: {
                 'Content-Type': 'application/json',
             },
             body: JSON.stringify({ cartao: index }),
         });
-        criarCartoes();
+        criarcards();
     }
     catch (e) {
         console.log(e);
@@ -30,7 +30,7 @@ export async function excluirCartoes(index) {
 
 export async function cadastrarCatao(nome, valor, link) {
     try {
-        const response = await fetch('http://localhost:3000/cartoes', {
+        const response = await fetch('http://localhost:3000/cards', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
@@ -41,7 +41,7 @@ export async function cadastrarCatao(nome, valor, link) {
                 img: link,
             }),
         });
-        criarCartoes();
+        criarcards();
     }
     catch (e) {
         console.log(e);
