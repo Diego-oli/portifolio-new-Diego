@@ -38,7 +38,7 @@ export async function cadastrarCatao(nome, valor, link) {
             body: JSON.stringify({
                 nome: nome,
                 valor: valor,
-                img: link,
+                image: link,
             }),
         });
         criarcards();
@@ -48,7 +48,7 @@ export async function cadastrarCatao(nome, valor, link) {
     }
 }
 
-export async function atualizarCartao(id, nome, valor, img) {
+export async function atualizarCartao(id, nome, valor, image) {
     try {
         const response = await fetch('http://localhost:3000/cartoes', {
             method: 'PUT',
@@ -58,7 +58,7 @@ export async function atualizarCartao(id, nome, valor, img) {
             body: JSON.stringify({
                 nome: nome,
                 valor: valor,
-                img: img,
+                image: image,
                 id: id,
             }),
         });
