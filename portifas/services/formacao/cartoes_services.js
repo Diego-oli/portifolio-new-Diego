@@ -4,7 +4,7 @@ export async function buscarCarotes() {
     try {
         const response = await fetch('http://localhost:3000/cards');
         const data = await response.json();
-        const cards = data.cards;
+        const cards = data;
         return cards;
     }
     catch (e) {
