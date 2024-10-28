@@ -1,5 +1,6 @@
 @import url(./telaCadastro.css);
 @import url(./telaAtt.css);
+@import url(./../header.css);
 
 body{
     display: flex;
