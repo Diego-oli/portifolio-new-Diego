@@ -1,5 +1,5 @@
-import { buscarCarotes } from "../../../services/formacao/cartoes_services.js";
-import { excluircards } from "./../../../services/formacao/cartoes_services.js";
+import { criarCartoes } from "./../../../services/formacao/cartoes_services.js";
+import {  buscarCarotes} from "./../../../services/formacao/cartoes_services.js";
 import { mostraTelaCad } from "../../../controller/formacao/telacad.js";
 import { mostraTelaAtt } from "../../../controller/formacao/telaatt.js";
 

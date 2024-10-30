@@ -1,18 +1,18 @@
 import { criarCartoes } from "../../view/js/formacao/cartoes_view.js";
 
-export async function buscarCartoes() {
+export async function buscarCarotes() {
     try {
         const response = await fetch('https://backend-portifolio-m5k4.vercel.app/cartoes');
         const data = await response.json();
-        const cartoes = data;
-        return cartoes;
+        const cards = data;
+        return cards;
     }
     catch (e) {
         console.log(e);
     }
 }
 
-export async function excluircartoes(index) {
+export async function excluircards(index) {
     try {
         const response = await fetch('https://backend-portifolio-m5k4.vercel.app/cartoes', {
             method: 'DELETE',
@@ -21,7 +21,7 @@ export async function excluircartoes(index) {
             },
             body: JSON.stringify({ cartao: index }),
         });
-        criarcartoes();
+        criarcards();
     }
     catch (e) {
         console.log(e);
@@ -41,7 +41,7 @@ export async function cadastrarCatao(nome, valor, link) {
                 image: link,
             }),
         });
-        criarcartoes();
+        criarcards();
     }
     catch (e) {
         console.log(e);
