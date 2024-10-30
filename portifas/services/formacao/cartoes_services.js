@@ -1,27 +1,27 @@
 import { criarCartoes } from "../../view/js/formacao/cartoes_view.js";
 
-export async function buscarCarotes() {
+export async function buscarCartoes() {
     try {
-        const response = await fetch('http://localhost:3000/cards');
+        const response = await fetch('https://backend-portifolio-m5k4.vercel.app/cartoes');
         const data = await response.json();
-        const cards = data;
-        return cards;
+        const cartoes = data;
+        return cartoes;
     }
     catch (e) {
         console.log(e);
     }
 }
 
-export async function excluircards(index) {
+export async function excluircartoes(index) {
     try {
-        const response = await fetch('http://localhost:3000/cards', {
+        const response = await fetch('https://backend-portifolio-m5k4.vercel.app/cartoes', {
             method: 'DELETE',
             headers: {
                 'Content-Type': 'application/json',
             },
             body: JSON.stringify({ cartao: index }),
         });
-        criarcards();
+        criarcartoes();
     }
     catch (e) {
         console.log(e);
@@ -30,7 +30,7 @@ export async function excluircards(index) {
 
 export async function cadastrarCatao(nome, valor, link) {
     try {
-        const response = await fetch('http://localhost:3000/cards', {
+        const response = await fetch('https://backend-portifolio-m5k4.vercel.app/cartoes', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
@@ -41,7 +41,7 @@ export async function cadastrarCatao(nome, valor, link) {
                 image: link,
             }),
         });
-        criarcards();
+        criarcartoes();
     }
     catch (e) {
         console.log(e);
