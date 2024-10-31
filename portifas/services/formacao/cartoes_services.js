@@ -4,7 +4,7 @@ export async function buscarCarotes() {
     try {
         const response = await fetch('https://backend-portifolio-mauve.vercel.app/cartoes');
         const data = await response.json();
-        const cards = data;
+        const cards = data.cartoes;
         return cards;
     }
     catch (e) {
