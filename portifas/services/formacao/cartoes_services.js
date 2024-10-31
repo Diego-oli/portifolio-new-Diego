@@ -2,7 +2,7 @@ import { criarCartoes } from "../../view/js/formacao/cartoes_view.js";
 
 export async function buscarCarotes() {
     try {
-        const response = await fetch('https://backend-portifolio-mauve.vercel.app/cartoes');
+        const response = await fetch('https://backend-portifolio-kappa.vercel.app/cartoes');
         const data = await response.json();
         const cards = data.cartoes;
         return cards;
@@ -14,23 +14,23 @@ export async function buscarCarotes() {
 
 export async function excluircards(index) {
     try {
-        const response = await fetch('https://backend-portifolio-mauve.vercel.app/cartoes', {
+        const response = await fetch('https://backend-portifolio-kappa.vercel.app/cartoes', {
             method: 'DELETE',
             headers: {
                 'Content-Type': 'application/json',
             },
             body: JSON.stringify({ cartao: index }),
         });
-        criarcards();
+        criarCartoes();
     }
     catch (e) {
-        console.log(e);
+        console.log('Ola ola' + e);
     }
 }
 
 export async function cadastrarCatao(nome, valor, link) {
     try {
-        const response = await fetch('https://backend-portifolio-mauve.vercel.app/cartoes', {
+        const response = await fetch('https://backend-portifolio-kappa.vercel.app/cartoes', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
@@ -38,10 +38,10 @@ export async function cadastrarCatao(nome, valor, link) {
             body: JSON.stringify({
                 nome: nome,
                 valor: valor,
-                image: link,
+                img: link,
             }),
         });
-        criarcards();
+        criarCartoes();
     }
     catch (e) {
         console.log(e);
@@ -50,7 +50,7 @@ export async function cadastrarCatao(nome, valor, link) {
 
 export async function atualizarCartao(id, nome, valor, image) {
     try {
-        const response = await fetch('http://localhost:3000/cartoes', {
+        const response = await fetch('https://backend-portifolio-kappa.vercel.app/cartoes', {
             method: 'PUT',
             headers: {
                 'Content-Type': 'application/json',

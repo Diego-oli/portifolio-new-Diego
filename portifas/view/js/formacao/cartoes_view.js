@@ -1,4 +1,4 @@
-import {  buscarCarotes} from "./../../../services/formacao/cartoes_services.js";
+import {  buscarCarotes, excluircards} from "./../../../services/formacao/cartoes_services.js";
 import { mostraTelaCad } from "../../../controller/formacao/telacad.js";
 import { mostraTelaAtt } from "../../../controller/formacao/telaatt.js";
 
@@ -27,7 +27,7 @@ export async function criarCartoes() {
         button.className = 'button_card';
         button.textContent = 'EXCLUIR';
         button.addEventListener('click', ()=>{
-            excluirCartoes(cartoes[i].id);
+            excluircards(cartoes[i].id);
         });
 
         let buttonAtt = document.createElement('button');
